@@ -1,9 +1,23 @@
 import { View, Text, StyleSheet, FlatList, Pressable } from "react-native";
 
 const resourceData = [
-  { id: "1", name: "Resource 1", description: "This is Resource 1" },
-  { id: "2", name: "Resource 2", description: "This is Resource 2" },
-  { id: "3", name: "Resource 3", description: "This is Resource 3" },
+  {
+    id: "1",
+    name: "My Schedule",
+    description: "This Is to check when your classes are scheduled",
+  },
+  {
+    id: "2",
+    name: "My Assignments",
+    description:
+      "This is to help you keep track of your assignments and due dates",
+  },
+  {
+    id: "3",
+    name: "Advisors",
+    description:
+      "This is to connect with your advisors. They can help you with planning your academic path, choosing courses, and addressing any concerns you may have.",
+  },
 ];
 
 export default function ResourcesScreen({ navigation }) {
@@ -41,13 +55,14 @@ const styles = StyleSheet.create({
   },
 
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: "#ffffffff",
     padding: 10,
     borderRadius: 8,
     marginBottom: 10,
     elevation: 2,
   },
   cardTitle: {
+    textAlign: "center",
     fontSize: 18,
   },
 });

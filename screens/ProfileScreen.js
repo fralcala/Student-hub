@@ -4,7 +4,9 @@ export default function ProfileScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>ProfileScreen</Text>
-      <Text style={styles.text}>This is the Profile Screen</Text>
+      <Text style={styles.text}>
+        This is where you can view and update your profile information.
+      </Text>
     </View>
   );
 }
