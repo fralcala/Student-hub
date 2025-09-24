@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function ProfileScreen() {
+export default function ResourcesScreen({ route }) {
+  const { resource } = route.params;
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>ProfileScreen</Text>
-      <Text style={styles.text}>This is the Profile Screen</Text>
+      <Text style={styles.title}>{resource.name}</Text>
+      <Text style={styles.description}>{resource.description}</Text>
     </View>
   );
 }
@@ -18,12 +19,12 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: 15,
   },
 
-  text: {
+  description: {
     fontSize: 16,
     textAlign: "center",
   },
